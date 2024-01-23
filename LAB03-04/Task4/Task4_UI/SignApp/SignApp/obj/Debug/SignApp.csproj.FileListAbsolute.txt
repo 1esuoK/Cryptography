@@ -1,0 +1,12 @@
+C:\Users\chitu\source\repos\SignApp\SignApp\bin\Debug\SignApp.exe.config
+C:\Users\chitu\source\repos\SignApp\SignApp\bin\Debug\SignApp.exe
+C:\Users\chitu\source\repos\SignApp\SignApp\bin\Debug\SignApp.pdb
+C:\Users\chitu\source\repos\SignApp\SignApp\obj\Debug\SignApp.Properties.Resources.resources
+C:\Users\chitu\source\repos\SignApp\SignApp\obj\Debug\SignApp.csproj.GenerateResource.cache
+C:\Users\chitu\source\repos\SignApp\SignApp\obj\Debug\SignApp.csproj.CoreCompileInputs.cache
+C:\Users\chitu\source\repos\SignApp\SignApp\obj\Debug\SignApp.exe
+C:\Users\chitu\source\repos\SignApp\SignApp\obj\Debug\SignApp.pdb
+C:\Users\chitu\source\repos\SignApp\SignApp\obj\Debug\SignApp.Dashboard.resources
+C:\Users\chitu\source\repos\SignApp\SignApp\obj\Debug\SignApp.Sign.resources
+C:\Users\chitu\source\repos\SignApp\SignApp\obj\Debug\SignApp.Verify.resources
+C:\Users\chitu\source\repos\SignApp\SignApp\obj\Debug\SignApp.KeyGen.resources

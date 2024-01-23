@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{bb253e69-8b3a-473c-b9dc-abe7b0b18cfa}</ProjectGuid>
+    <RootNamespace>ECC</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;ECC_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableUAC>false</EnableUAC>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;ECC_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableUAC>false</EnableUAC>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;ECC_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>C:\LAB04\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableUAC>false</EnableUAC>
+      <AdditionalDependencies>C:\LAB04\lib\libcrypto.lib;C:\LAB04\lib\libssl.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;ECC_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableUAC>false</EnableUAC>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\..\..\LAB04\include\openssl\aes.h" />
+    <ClInclude Include="..\..\..\..\..\..\LAB04\include\openssl\asn1.h" />
+    <ClInclude Include="..\..\..\..\..\..\LAB04\include\openssl\asn1err.h" />
+    <ClInclude Include="..\..\..\..\..\..\LAB04\include\openssl\asn1t.h" />
+    <ClInclude Include="..\..\..\..\..\..\LAB04\include\openssl\asn1_mac.h" />
+    <ClInclude Include="..\..\..\..\..\..\LAB04\include\openssl\async.h" />
+    <ClInclude Include="..\..\..\..\..\..\LAB04\include\openssl\asyncerr.h" />
+    <ClInclude Include="..\..\..\..\..\..\LAB04\include\openssl\bio.h" />
+    <ClInclude Include="..\..\..\..\..\..\LAB04\include\openssl\bioerr.h" />
+    <ClInclude Include="..\..\..\..\..\..\LAB04\include\openssl\blowfish.h" />
+    <ClInclude Include="..\..\..\..\..\..\LAB04\include\openssl\bn.h" />
+    <ClInclude Include="..\..\..\..\..\..\LAB04\include\openssl\bnerr.h" />
+    <ClInclude Include="..\..\..\..\..\..\LAB04\include\openssl\buffer.h" />
+    <ClInclude Include="..\..\..\..\..\..\LAB04\include\openssl\buffererr.h" />
+    <ClInclude Include="..\..\..\..\..\..\LAB04\include\openssl\camellia.h" />
+    <ClInclude Include="..\..\..\..\..\..\LAB04\include\openssl\cast.h" />
+    <ClInclude Include="..\..\..\..\..\..\LAB04\include\openssl\cmac.h" />
+    <ClInclude Include="..\..\..\..\..\..\LAB04\include\openssl\cmp.h" />
+    <ClInclude Include="..\..\..\..\..\..\LAB04\include\openssl\cmperr.h" />
+    <ClInclude Include="..\..\..\..\..\..\LAB04\include\openssl\cmp_util.h" />
+    <ClInclude Include="..\..\..\..\..\..\LAB04\include\openssl\cms.h" />
+    <ClInclude Include="..\..\..\..\..\..\LAB04\include\openssl\cmserr.h" />
+    <ClInclude Include="..\..\..\..\..\..\LAB04\include\openssl\comp.h" />
+    <ClInclude Include="..\..\..\..\..\..\LAB04\include\openssl\comperr.h" />
+    <ClInclude Include="..\..\..\..\..\..\LAB04\include\openssl\conf.h" />
+    <ClInclude Include="..\..\..\..\..\..\LAB04\include\openssl\conferr.h" />
+    <ClInclude Include="..\..\..\..\..\..\LAB04\include\openssl\configuration.h" />
+    <ClInclude Include="..\..\..\..\..\..\LAB04\include\openssl\conftypes.h" />
+    <ClInclude Include="..\..\..\..\..\..\LAB04\include\openssl\conf_api.h" />
+    <ClInclude Include="..\..\..\..\..\..\LAB04\include\openssl\core.h" />
+    <ClInclude Include="..\..\..\..\..\..\LAB04\include\openssl\core_dispatch.h" />
+    <ClInclude Include="..\..\..\..\..\..\LAB04\include\openssl\core_names.h" />
+    <ClInclude Include="..\..\..\..\..\..\LAB04\include\openssl\core_object.h" />
+    <ClInclude Include="..\..\..\..\..\..\LAB04\include\openssl\crmf.h" />
+    <ClInclude Include="..\..\..\..\..\..\LAB04\include\openssl\crmferr.h" />
+    <ClInclude Include="..\..\..\..\..\..\LAB04\include\openssl\crypto.h" />
+    <ClInclude Include="..\..\..\..\..\..\LAB04\include\openssl\cryptoerr.h" />
+    <ClInclude Include="..\..\..\..\..\..\LAB04\include\openssl\cryptoerr_legacy.h" />
+    <ClInclude Include="..\..\..\..\..\..\LAB04\include\openssl\ct.h" />
+    <ClInclude Include="..\..\..\..\..\..\LAB04\include\openssl\cterr.h" />
+    <ClInclude Include="..\..\..\..\..\..\LAB04\include\openssl\decoder.h" />
+    <ClInclude Include="..\..\..\..\..\..\LAB04\include\openssl\decodererr.h" />
+    <ClInclude Include="..\..\..\..\..\..\LAB04\include\openssl\des.h" />
+    <ClInclude Include="..\..\..\..\..\..\LAB04\include\openssl\dh.h" />
+    <ClInclude Include="..\..\..\..\..\..\LAB04\include\openssl\dherr.h" />
+    <ClInclude Include="..\..\..\..\..\..\LAB04\include\openssl\dsa.h" />
+    <ClInclude Include="..\..\..\..\..\..\LAB04\include\openssl\dsaerr.h" />
+    <ClInclude Include="..\..\..\..\..\..\LAB04\include\openssl\dtls1.h" />
+    <ClInclude Include="..\..\..\..\..\..\LAB04\include\openssl\ebcdic.h" />
+    <ClInclude Include="..\..\..\..\..\..\LAB04\include\openssl\ec.h" />
+    <ClInclude Include="..\..\..\..\..\..\LAB04\include\openssl\ecdh.h" />
+    <ClInclude Include="..\..\..\..\..\..\LAB04\include\openssl\ecdsa.h" />
+    <ClInclude Include="..\..\..\..\..\..\LAB04\include\openssl\ecerr.h" />
+    <ClInclude Include="..\..\..\..\..\..\LAB04\include\openssl\encoder.h" />
+    <ClInclude Include="..\..\..\..\..\..\LAB04\include\openssl\encodererr.h" />
+    <ClInclude Include="..\..\..\..\..\..\LAB04\include\openssl\engine.h" />
+    <ClInclude Include="..\..\..\..\..\..\LAB04\include\openssl\engineerr.h" />
+    <ClInclude Include="..\..\..\..\..\..\LAB04\include\openssl\err.h" />
+    <ClInclude Include="..\..\..\..\..\..\LAB04\include\openssl\ess.h" />
+    <ClInclude Include="..\..\..\..\..\..\LAB04\include\openssl\esserr.h" />
+    <ClInclude Include="..\..\..\..\..\..\LAB04\include\openssl\evp.h" />
+    <ClInclude Include="..\..\..\..\..\..\LAB04\include\openssl\evperr.h" />
+    <ClInclude Include="..\..\..\..\..\..\LAB04\include\openssl\e_os2.h" />
+    <ClInclude Include="..\..\..\..\..\..\LAB04\include\openssl\fipskey.h" />
+    <ClInclude Include="..\..\..\..\..\..\LAB04\include\openssl\fips_names.h" />
+    <ClInclude Include="..\..\..\..\..\..\LAB04\include\openssl\hmac.h" />
+    <ClInclude Include="..\..\..\..\..\..\LAB04\include\openssl\http.h" />
+    <ClInclude Include="..\..\..\..\..\..\LAB04\include\openssl\httperr.h" />
+    <ClInclude Include="..\..\..\..\..\..\LAB04\include\openssl\idea.h" />
+    <ClInclude Include="..\..\..\..\..\..\LAB04\include\openssl\kdf.h" />
+    <ClInclude Include="..\..\..\..\..\..\LAB04\include\openssl\kdferr.h" />
+    <ClInclude Include="..\..\..\..\..\..\LAB04\include\openssl\lhash.h" />
+    <ClInclude Include="..\..\..\..\..\..\LAB04\include\openssl\macros.h" />
+    <ClInclude Include="..\..\..\..\..\..\LAB04\include\openssl\md2.h" />
+    <ClInclude Include="..\..\..\..\..\..\LAB04\include\openssl\md4.h" />
+    <ClInclude Include="..\..\..\..\..\..\LAB04\include\openssl\md5.h" />
+    <ClInclude Include="..\..\..\..\..\..\LAB04\include\openssl\mdc2.h" />
+    <ClInclude Include="..\..\..\..\..\..\LAB04\include\openssl\modes.h" />
+    <ClInclude Include="..\..\..\..\..\..\LAB04\include\openssl\objects.h" />
+    <ClInclude Include="..\..\..\..\..\..\LAB04\include\openssl\objectserr.h" />
+    <ClInclude Include="..\..\..\..\..\..\LAB04\include\openssl\obj_mac.h" />
+    <ClInclude Include="..\..\..\..\..\..\LAB04\include\openssl\ocsp.h" />
+    <ClInclude Include="..\..\..\..\..\..\LAB04\include\openssl\ocsperr.h" />
+    <ClInclude Include="..\..\..\..\..\..\LAB04\include\openssl\opensslconf.h" />
+    <ClInclude Include="..\..\..\..\..\..\LAB04\include\openssl\opensslv.h" />
+    <ClInclude Include="..\..\..\..\..\..\LAB04\include\openssl\ossl_typ.h" />
+    <ClInclude Include="..\..\..\..\..\..\LAB04\include\openssl\params.h" />
+    <ClInclude Include="..\..\..\..\..\..\LAB04\include\openssl\param_build.h" />
+    <ClInclude Include="..\..\..\..\..\..\LAB04\include\openssl\pem.h" />
+    <ClInclude Include="..\..\..\..\..\..\LAB04\include\openssl\pem2.h" />
+    <ClInclude Include="..\..\..\..\..\..\LAB04\include\openssl\pemerr.h" />
+    <ClInclude Include="..\..\..\..\..\..\LAB04\include\openssl\pkcs12.h" />
+    <ClInclude Include="..\..\..\..\..\..\LAB04\include\openssl\pkcs12err.h" />
+    <ClInclude Include="..\..\..\..\..\..\LAB04\include\openssl\pkcs7.h" />
+    <ClInclude Include="..\..\..\..\..\..\LAB04\include\openssl\pkcs7err.h" />
+    <ClInclude Include="..\..\..\..\..\..\LAB04\include\openssl\proverr.h" />
+    <ClInclude Include="..\..\..\..\..\..\LAB04\include\openssl\provider.h" />
+    <ClInclude Include="..\..\..\..\..\..\LAB04\include\openssl\prov_ssl.h" />
+    <ClInclude Include="..\..\..\..\..\..\LAB04\include\openssl\rand.h" />
+    <ClInclude Include="..\..\..\..\..\..\LAB04\include\openssl\randerr.h" />
+    <ClInclude Include="..\..\..\..\..\..\LAB04\include\openssl\rc2.h" />
+    <ClInclude Include="..\..\..\..\..\..\LAB04\include\openssl\rc4.h" />
+    <ClInclude Include="..\..\..\..\..\..\LAB04\include\openssl\rc5.h" />
+    <ClInclude Include="..\..\..\..\..\..\LAB04\include\openssl\ripemd.h" />
+    <ClInclude Include="..\..\..\..\..\..\LAB04\include\openssl\rsa.h" />
+    <ClInclude Include="..\..\..\..\..\..\LAB04\include\openssl\rsaerr.h" />
+    <ClInclude Include="..\..\..\..\..\..\LAB04\include\openssl\safestack.h" />
+    <ClInclude Include="..\..\..\..\..\..\LAB04\include\openssl\seed.h" />
+    <ClInclude Include="..\..\..\..\..\..\LAB04\include\openssl\self_test.h" />
+    <ClInclude Include="..\..\..\..\..\..\LAB04\include\openssl\sha.h" />
+    <ClInclude Include="..\..\..\..\..\..\LAB04\include\openssl\srp.h" />
+    <ClInclude Include="..\..\..\..\..\..\LAB04\include\openssl\srtp.h" />
+    <ClInclude Include="..\..\..\..\..\..\LAB04\include\openssl\ssl.h" />
+    <ClInclude Include="..\..\..\..\..\..\LAB04\include\openssl\ssl2.h" />
+    <ClInclude Include="..\..\..\..\..\..\LAB04\include\openssl\ssl3.h" />
+    <ClInclude Include="..\..\..\..\..\..\LAB04\include\openssl\sslerr.h" />
+    <ClInclude Include="..\..\..\..\..\..\LAB04\include\openssl\sslerr_legacy.h" />
+    <ClInclude Include="..\..\..\..\..\..\LAB04\include\openssl\stack.h" />
+    <ClInclude Include="..\..\..\..\..\..\LAB04\include\openssl\store.h" />
+    <ClInclude Include="..\..\..\..\..\..\LAB04\include\openssl\storeerr.h" />
+    <ClInclude Include="..\..\..\..\..\..\LAB04\include\openssl\symhacks.h" />
+    <ClInclude Include="..\..\..\..\..\..\LAB04\include\openssl\tls1.h" />
+    <ClInclude Include="..\..\..\..\..\..\LAB04\include\openssl\trace.h" />
+    <ClInclude Include="..\..\..\..\..\..\LAB04\include\openssl\ts.h" />
+    <ClInclude Include="..\..\..\..\..\..\LAB04\include\openssl\tserr.h" />
+    <ClInclude Include="..\..\..\..\..\..\LAB04\include\openssl\txt_db.h" />
+    <ClInclude Include="..\..\..\..\..\..\LAB04\include\openssl\types.h" />
+    <ClInclude Include="..\..\..\..\..\..\LAB04\include\openssl\ui.h" />
+    <ClInclude Include="..\..\..\..\..\..\LAB04\include\openssl\uierr.h" />
+    <ClInclude Include="..\..\..\..\..\..\LAB04\include\openssl\whrlpool.h" />
+    <ClInclude Include="..\..\..\..\..\..\LAB04\include\openssl\x509.h" />
+    <ClInclude Include="..\..\..\..\..\..\LAB04\include\openssl\x509err.h" />
+    <ClInclude Include="..\..\..\..\..\..\LAB04\include\openssl\x509v3.h" />
+    <ClInclude Include="..\..\..\..\..\..\LAB04\include\openssl\x509v3err.h" />
+    <ClInclude Include="..\..\..\..\..\..\LAB04\include\openssl\x509_vfy.h" />
+    <ClInclude Include="..\..\..\..\..\..\LAB04\include\openssl\__DECC_INCLUDE_EPILOGUE.H" />
+    <ClInclude Include="..\..\..\..\..\..\LAB04\include\openssl\__DECC_INCLUDE_PROLOGUE.H" />
+    <ClInclude Include="framework.h" />
+    <ClInclude Include="pch.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="dllmain.cpp" />
+    <ClCompile Include="pch.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

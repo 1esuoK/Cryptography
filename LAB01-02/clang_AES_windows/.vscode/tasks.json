@@ -1,0 +1,31 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "cppbuild",
+			"label": "C/C++: clang++.exe build active file",
+			"command": "D:\\msys2\\mingw64\\bin\\clang++.exe",
+			"args": [
+				"-g2",
+				"-O3",
+				"-DNDEBUG",
+				"${file}",
+				"-o",
+				"${fileDirname}\\${fileBasenameNoExtension}.exe",
+				"-pthread",
+				"-L${workspaceFolder}\\lib",
+				"-l:libcryptopp.a",
+				"-I${workspaceFolder}\\include",
+				"-Wall"
+			],
+			"options": {
+				"cwd": "${fileDirname}"
+			},
+			"problemMatcher": [
+				"$gcc"
+			],
+			"group": "build",
+			"detail": "compiler: D:\\msys2\\mingw64\\bin\\clang++.exe"
+		}
+	]
+}

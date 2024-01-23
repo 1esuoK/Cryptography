@@ -1,0 +1,10 @@
+C:\Users\chitu\source\repos\SHA_APP\SHA_APP\bin\Debug\SHA_APP.exe.config
+C:\Users\chitu\source\repos\SHA_APP\SHA_APP\bin\Debug\SHA_APP.exe
+C:\Users\chitu\source\repos\SHA_APP\SHA_APP\bin\Debug\SHA_APP.pdb
+C:\Users\chitu\source\repos\SHA_APP\SHA_APP\obj\Debug\SHA_APP.SHA.resources
+C:\Users\chitu\source\repos\SHA_APP\SHA_APP\obj\Debug\SHA_APP.Properties.Resources.resources
+C:\Users\chitu\source\repos\SHA_APP\SHA_APP\obj\Debug\SHA_APP.csproj.GenerateResource.cache
+C:\Users\chitu\source\repos\SHA_APP\SHA_APP\obj\Debug\SHA_APP.csproj.CoreCompileInputs.cache
+C:\Users\chitu\source\repos\SHA_APP\SHA_APP\obj\Debug\SHA_APP.exe
+C:\Users\chitu\source\repos\SHA_APP\SHA_APP\obj\Debug\SHA_APP.pdb
+C:\Users\chitu\source\repos\SHA_APP\SHA_APP\obj\Debug\SHA_APP.csproj.AssemblyReference.cache

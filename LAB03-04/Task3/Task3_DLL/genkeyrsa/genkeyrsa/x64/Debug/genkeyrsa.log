@@ -1,0 +1,6 @@
+﻿  pch.cpp
+  dllmain.cpp
+C:\Users\chitu\source\repos\genkeyrsa\genkeyrsa\dllmain.cpp(205,38): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\chitu\source\repos\genkeyrsa\genkeyrsa\dllmain.cpp(234,40): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+     Creating library C:\Users\chitu\source\repos\genkeyrsa\x64\Debug\genkeyrsa.lib and object C:\Users\chitu\source\repos\genkeyrsa\x64\Debug\genkeyrsa.exp
+  genkeyrsa.vcxproj -> C:\Users\chitu\source\repos\genkeyrsa\x64\Debug\genkeyrsa.dll

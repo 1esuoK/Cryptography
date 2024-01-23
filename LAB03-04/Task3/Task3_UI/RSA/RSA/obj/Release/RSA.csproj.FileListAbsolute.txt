@@ -1,0 +1,12 @@
+C:\Users\chitu\source\repos\RSA\RSA\bin\Release\RSA.exe.config
+C:\Users\chitu\source\repos\RSA\RSA\bin\Release\RSA.exe
+C:\Users\chitu\source\repos\RSA\RSA\bin\Release\RSA.pdb
+C:\Users\chitu\source\repos\RSA\RSA\obj\Release\RSA.Dashboard.resources
+C:\Users\chitu\source\repos\RSA\RSA\obj\Release\RSA.Decrypt.resources
+C:\Users\chitu\source\repos\RSA\RSA\obj\Release\RSA.Encrypt.resources
+C:\Users\chitu\source\repos\RSA\RSA\obj\Release\RSA.KeyGen.resources
+C:\Users\chitu\source\repos\RSA\RSA\obj\Release\RSA.Properties.Resources.resources
+C:\Users\chitu\source\repos\RSA\RSA\obj\Release\RSA.csproj.GenerateResource.cache
+C:\Users\chitu\source\repos\RSA\RSA\obj\Release\RSA.csproj.CoreCompileInputs.cache
+C:\Users\chitu\source\repos\RSA\RSA\obj\Release\RSA.exe
+C:\Users\chitu\source\repos\RSA\RSA\obj\Release\RSA.pdb
