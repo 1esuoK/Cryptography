@@ -1,2 +1,2 @@
 # Cryptography
-UIT NT219 - Cryptography Courses
+UIT NT219 - Cryptography Course
